@@ -31,66 +31,9 @@
             opacity: 1 !important;
             transform: translate(0) scale(1) !important;
         }
-
-#userForm {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f8f8f8;
-}
-
-#userForm label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#userForm input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-#userForm input[type="submit"] {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-}
-
-#userForm input[type="submit"]:hover {
-    background-color: #0056b3;
-}
       </style>
     </noscript>
-    <script>
-      document.getElementById('userForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var phone = document.getElementById('phone').value;
-
-    var csvContent = 'data:text/csv;charset=utf-8,' 
-        + 'Name,Email,Phone\n' 
-        + name + ',' 
-        + email + ',' 
-        + phone + '\n';
-
-    var encodedUri = encodeURI(csvContent);
-    var link = document.createElement('a');
-    link.setAttribute('href', encodedUri);
-    link.setAttribute('download', 'user_details.csv');
-    link.click();
-        
-});
-      </script>
-    
+  
   </head>
   <body id="top">
     <header></header>
@@ -261,6 +204,7 @@
 <div class="ww-footer bg-light">
   <div class="container text-center py-4">
     <h4>For more such Amazing invitations contact Snappr</h4>
+    <h5>Pannaga- +91 7975519844</h5>
     <p class="my-0">&copy; Snappr Events All rights reserved.</p>
   </div>
 </div></div>
